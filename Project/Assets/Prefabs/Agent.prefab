@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 3168977889643859346}
   - component: {fileID: 6224839867813727456}
   - component: {fileID: 7529034370138449630}
+  - component: {fileID: 4702393064008224882}
+  - component: {fileID: 1592586609525426451}
+  - component: {fileID: 2259255017162410139}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -96,3 +99,44 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &4702393064008224882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409468372025409114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9bab18d5657553498cba7562c7627e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1592586609525426451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409468372025409114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbec2c45a8c03694d9a83a0d0ccbc51f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: 
+  _healthPoints: 0
+  _speed: 5
+--- !u!114 &2259255017162410139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409468372025409114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c26f3b39a77cd04e90abcca4ab1040a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _areaWhereAgentsWillSpawn: {fileID: 3435954566106656863, guid: 9274336435c3ec846a163be0b2ab954d, type: 3}
+  _agentTransform: {fileID: 2274745966026668870}

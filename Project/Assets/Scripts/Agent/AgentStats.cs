@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class AgentStats : MonoBehaviour
 {
-	[SerializeField] private int _healthPoints;
+	[SerializeField] private string _name;
+	[SerializeField] private int _maxHealthPoints;
 	[SerializeField] private float _speed;
 
-	public int HealthPoints => _healthPoints;
+	public string Name => _name;
+	public int MaxHealthPoints => _maxHealthPoints;
 	public float Speed => _speed;
+
 }

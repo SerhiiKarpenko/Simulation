@@ -1,10 +1,9 @@
 using UnityEngine;
 
-public class RandomSpawnPositions : MonoBehaviour
+public class RandomPositionsInArea : MonoBehaviour
 {
     [SerializeField] private Transform _areaWhereAgentsWillSpawn;
     [SerializeField] private Transform _agentTransform;
-    private float _scaleOfAgentY;
     private Vector3 _centerOfArea;
     private Vector3 _scaleOfArea;
 
@@ -13,7 +12,6 @@ public class RandomSpawnPositions : MonoBehaviour
     {
         _centerOfArea = _areaWhereAgentsWillSpawn.position;
         _scaleOfArea = _areaWhereAgentsWillSpawn.localScale;
-        _scaleOfAgentY = _agentTransform.localScale.y;
     }
 
     public Vector3 GetRandomPositionInArea()
