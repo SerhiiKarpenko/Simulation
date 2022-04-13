@@ -1,10 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MarkoPolo : MonoBehaviour
 {
-	public static string PrintMarkoPoloText()
+	[SerializeField] private Text _marcoPoloText;
+	public void OnPrintMarcoPoloButtonClick()
+    {
+		_marcoPoloText.text = PrintMarkoPoloText();
+    }
+
+	public void OnEraseMarcoPoloTextButtonClick()
+    {
+		_marcoPoloText.text = "";
+    }
+
+	private string PrintMarkoPoloText()
 	{
 		string marcoPolo = "";
 		for (int i = 1; i <= 100; i++)

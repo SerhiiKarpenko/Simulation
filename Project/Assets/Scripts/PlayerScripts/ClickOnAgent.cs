@@ -5,8 +5,6 @@ public class ClickOnAgent : MonoBehaviour
 {
 	[SerializeField] private Text _agentHealthPointsText;
 	[SerializeField] private Text _agentNameText;
-	[SerializeField] private Text _markoPoloText;
-	[SerializeField] private GameObject _agentInformationCanvas;
 	private GameObject _previousClickedAgent;
 
 	private void Update()
@@ -32,8 +30,7 @@ public class ClickOnAgent : MonoBehaviour
 		{
 			if(hit.transform.gameObject.GetComponent<AgentStats>() != null)
 			{
-				_agentInformationCanvas.SetActive(true);
-				_markoPoloText.text = MarkoPolo.PrintMarkoPoloText();
+				SetVisibleOfText(true);
 				if (_previousClickedAgent != null)
 				{
 					_previousClickedAgent.GetComponent<AgentSelectedChangeColor>().AgentChangeColorUnSelected();
@@ -49,10 +46,16 @@ public class ClickOnAgent : MonoBehaviour
 				{
 					_previousClickedAgent.GetComponent<AgentSelectedChangeColor>().AgentChangeColorUnSelected();
 				}
-				_agentInformationCanvas.SetActive(false);
+				SetVisibleOfText(false);
 			}
 		}
 
 	}
+
+	private void SetVisibleOfText(bool visible)
+    {
+		_agentNameText.gameObject.SetActive(visible);
+		_agentHealthPointsText.gameObject.SetActive(visible);
+    }
 
 }
