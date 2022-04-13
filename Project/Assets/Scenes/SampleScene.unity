@@ -424,7 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _agentPrefab: {fileID: 6409468372025409114, guid: b2fd5254221426c4f86f9bda322eb45c, type: 3}
   _secondsBetweenSpawnAgent: 3
-  _maxAmountOfAgentsToSpawn: 1
+  _maxAmountOfAgentsToSpawn: 9
 --- !u!4 &1253163027
 Transform:
   m_ObjectHideFlags: 0
