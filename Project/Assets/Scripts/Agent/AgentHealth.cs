@@ -4,6 +4,7 @@ using UnityEngine;
 public class AgentHealth : MonoBehaviour
 {
     private int _currentHealth;
+
     private void Start()
     {
         _currentHealth = GetComponent<AgentStats>().MaxHealthPoints;

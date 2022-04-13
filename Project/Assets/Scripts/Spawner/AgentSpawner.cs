@@ -27,7 +27,7 @@ public class AgentSpawner : MonoBehaviour
             }
             else
             {
-                // creating agent, waiting some time and again creation agent
+                // creating agent, waiting time between and again creation agent
                 yield return new WaitForSeconds(_secondsBetweenSpawnAgent);
                 SpawnAgent(_agentPrefab, _randomSpawnPositions.GetRandomPositionInArea(), Quaternion.identity);
                 _amountOfAlreadySpawnedAgenst++;
