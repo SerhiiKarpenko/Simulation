@@ -21,15 +21,15 @@ public class MarkoPolo : MonoBehaviour
 		{
 			if (i % 3 == 0 && i % 5 == 0)
 			{
-				marcoPolo += " MarkoPolo ";
+				marcoPolo += " " + i + " = MarkoPolo ";
 			}
 			else if (i % 5 == 0)
 			{
-				marcoPolo += " Polo ";
+				marcoPolo += " " + i + " = Polo ";
 			}
 			else if (i % 3 == 0)
 			{
-				marcoPolo += " Marco ";
+				marcoPolo += " " + i +  " = Marco ";
 			}
 			else
 			{
