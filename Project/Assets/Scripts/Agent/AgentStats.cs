@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class AgentStats : MonoBehaviour
 {
 	[SerializeField] private AgentData _agentTemplate;

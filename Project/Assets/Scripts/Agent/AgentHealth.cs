@@ -4,7 +4,6 @@ using UnityEngine;
 public class AgentHealth : MonoBehaviour
 {
     private int _currentHealth;
-
     public int CurrentHealth => _currentHealth;
 
     private void Start()
