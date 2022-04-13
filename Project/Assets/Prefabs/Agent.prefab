@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1592586609525426451}
   - component: {fileID: 2259255017162410139}
   - component: {fileID: 7187448669273021241}
+  - component: {fileID: 3810372075221402907}
   - component: {fileID: -2827168818913782419}
   - component: {fileID: 5555140919104398081}
   m_Layer: 0
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbec2c45a8c03694d9a83a0d0ccbc51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _agentTemplate: {fileID: 0}
   _name: agent
-  _maxHealthPoints: 3
   _speed: 5
 --- !u!114 &2259255017162410139
 MonoBehaviour:
@@ -153,6 +154,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552501b84f99ca640b4a39b0a7810a91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3810372075221402907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6409468372025409114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f987f3fd762e9e4584a8cc2b7491105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelected: 0
 --- !u!65 &-2827168818913782419
 BoxCollider:
   m_ObjectHideFlags: 0
